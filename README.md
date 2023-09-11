@@ -37,7 +37,7 @@ export TARGET_REGION="target_region"
 Or, you can provide them inline when running the script:
 
 ```bash
-SOURCE_AWS_PROFILE="source_profile" TARGET_AWS_PROFILE="target_profile" SOURCE_AWS_ACCOUNT="source_account_id" TARGET_AWS_ACCOUNT="target_account_id" SOURCE_REGION="source_region" TARGET_REGION="target_region" ./script.sh
+SOURCE_AWS_PROFILE="source_profile" TARGET_AWS_PROFILE="target_profile" SOURCE_AWS_ACCOUNT="source_account_id" TARGET_AWS_ACCOUNT="target_account_id" SOURCE_REGION="source_region" TARGET_REGION="target_region" ./migrate_ecr_repositories.sh
 ```
 
 ### Script File
@@ -63,5 +63,3 @@ The script will:
 3. Loop through each repository, create it in the target ECR if it doesn't exist, and copy all images.
 
 ---
-
-Feel free to add this README.md to your repository to guide users through the process of setting up and using the script.
