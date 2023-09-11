@@ -39,6 +39,8 @@ process_repository() {
     docker pull "$source_image"
     docker tag "$source_image" "$target_image"
     docker push "$target_image"
+    docker rmi "$source_image"
+    docker rmi "$target_image"
   done
 }
 
